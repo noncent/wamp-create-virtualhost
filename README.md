@@ -1,4 +1,4 @@
-# Wamp_Auto_Virtual_Server
+# Wamp-Virtual-Server-Creator
 Wamp Virtual Server Creator, Wamp Auto Virtual Server, Wamp Vhost Creator helps you to create a new virtual server on your machine on the fly. You can create HTTP/HTTPS virtual server by just clicking on few buttons.. This is a single file to Create A Virtual Server for your Development in WAMP. 
 
 Although I have been using this script from a long time but I can't ensure that it will works without any error. There is some known error, because everybody
