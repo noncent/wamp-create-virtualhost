@@ -231,7 +231,7 @@ class WampVirtualServer {
         if (!empty($this->virtualServerName) && !empty($this->projectRootFolder) && file_exists($this->projectRootFolder) && is_dir($this->projectRootFolder)) {
             $file = $this->apacheHttpdConfigFile;
             if (is_writable($file) && file_exists($file)) {
-                $backupFile = $file . '.bak';
+                $backupFile = $file . date('-d-M-Y-h-m-s-A') . '.bak';
                 if (!copy($file, $backupFile)) {
                     $this->showUserMessage("failed to copy $file...\n", 'error');
                     return false;
@@ -282,7 +282,7 @@ class WampVirtualServer {
         if (!empty($this->virtualServerName) && !empty($this->projectRootFolder) && file_exists($this->projectRootFolder) && is_dir($this->projectRootFolder)) {
             $file = $this->apacheSslHttpdConfigFile;
             if (is_writable($file) && file_exists($file)) {
-                $backupFile = $file . '.bak';
+                $backupFile = $file . date('-d-M-Y-h-m-s-A') . '.bak';
                 if (!copy($file, $backupFile)) {
                     $this->showUserMessage("failed to copy $file...\n", 'error');
                     return false;
